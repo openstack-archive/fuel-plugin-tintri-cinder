@@ -1,0 +1,50 @@
+attributes:
+
+  tintri_server_hostname:
+    value: ''
+    label: 'Hostname/IP'
+    description: 'Hostname or IP address for Tintri VMstore.'
+    weight: 20
+    type: 'text'
+    
+  tintri_server_username:
+    value: ''
+    label: 'Username'
+    description: 'Username used to connect to Tintri VMstore'
+    weight: 21
+    type: 'text'
+    
+  tintri_server_password:
+    value: ''
+    label: 'Password'
+    description: 'Password used to connect to Tintri VMstore.'
+    weight: 22
+    type: 'password'
+
+  tintri_api_version:
+    value: 'v310'
+    label: 'API version'
+    description: 'API version to use to talk to Tintri VMstore.'
+    weight: 23
+    type: 'text'
+    
+  nfs_mount_options:
+    value: 'vers=3'
+    label: 'NFS options'
+    description: 'Options to use when mounting NFS shares'
+    weight: 24
+    type: 'text'
+
+  nfs_shares_config:
+    value: '/etc/cinder/nfs_shares'
+    label: 'NFS shares file'
+    description: 'Path for file a file used to store a list of NFS mounts used by Cinder.'
+    weight: 25
+    type: 'text'
+
+  nfs_mounts:
+    value: ''
+    label: 'NFS shares list'
+    description: 'Comma separated list of shares to include in the NFS shares file.'
+    weight: 26
+    type: 'text'

@@ -1,0 +1,14 @@
+- role: ['primary-controller', 'controller', 'cinder']
+  stage: post_deployment/6120
+  type: puppet
+  parameters:
+    puppet_manifest: puppet/manifests/controller.pp
+    puppet_modules: puppet/modules:/etc/puppet/modules
+    timeout: 360
+- role: ['compute']
+  stage: post_deployment/6121
+  type: puppet
+  parameters:
+    puppet_manifest: puppet/manifests/compute.pp
+    puppet_modules: puppet/modules:/etc/puppet/modules
+    timeout: 360

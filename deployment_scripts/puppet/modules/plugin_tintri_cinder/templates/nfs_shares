@@ -1,0 +1,3 @@
+<% @shares.split(',').each do |share| -%>
+<%= share %>
+<% end -%>
